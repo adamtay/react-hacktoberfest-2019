@@ -8,12 +8,12 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/auckland" exact={true} component={AucklandPage} />
-                <Route path="/" exact={true} component={HomePage} />
+                <Route path="/auckland" component={AucklandPage} exact />
+                <Route path="/" component={HomePage} exact />
                 <Redirect path="/" />
             </Switch>
         </BrowserRouter>
-    )
+    );
 }
 
 export default Router;
